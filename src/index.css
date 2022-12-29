@@ -1,14 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Comfortaa", cursive;
+}
+
 /* Active Navigation Link */
 .active {
-  @apply text-cyan-500;
+  @apply text-red-500;
 }
 
 .active svg {
-  @apply text-cyan-500;
+  @apply text-red-500;
 }
 
 .bar:nth-child(2) {

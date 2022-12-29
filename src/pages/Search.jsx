@@ -14,8 +14,6 @@ const Search = () => {
 
   const songs = data?.tracks?.hits?.map((song) => song.track);
 
-  console.log(songs);
-
   if (isFetching) return <Loader title="Loading top charts" />;
   if (error) return <Error />;
 
