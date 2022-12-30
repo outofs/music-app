@@ -28,10 +28,10 @@ const TopChartCard = ({
         className="w-20 h-20 rounded-lg"
       />
       <div className="flex-1 flex-col justify-center mx-3">
-        <Link to={`/songs/${song?.key}`}>
+        <Link to={`/music-app/songs/${song?.key}`}>
           <p className="text-xl font-bold text-white">{song?.title}</p>
         </Link>
-        <Link to={`/artists/${song?.artists[0].adamid}`}>
+        <Link to={`/music-app/artists/${song?.artists[0].adamid}`}>
           <p className="text-base text-gray-300 mt-1">{song?.subtitle}</p>
         </Link>
       </div>
@@ -75,7 +75,7 @@ const TopPlay = () => {
       <div className="w-full flex flex-col">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-white font-bold text-2xl">Top charts</h2>
-          <Link to={"/top-charts"}>
+          <Link to={"/music-app/top-charts"}>
             <p className="text-gray-300 text-base cursor-pointer">See more</p>
           </Link>
         </div>
@@ -98,7 +98,7 @@ const TopPlay = () => {
       <div className="w-full flex flex-col mt-8 ">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-white font-bold text-2xl">Top Artists</h2>
-          <Link to={"/top-artists"}>
+          <Link to={"/music-app/top-artists"}>
             <p className="text-gray-300 text-base cursor-pointer">See more</p>
           </Link>
         </div>
@@ -118,7 +118,7 @@ const TopPlay = () => {
               style={{ width: "25%", height: "auto" }}
               className="shadow-lg rounded-full animate-slideright"
             >
-              <Link to={`/artists/${song?.artists[0].adamid}`}>
+              <Link to={`/music-app/artists/${song?.artists[0].adamid}`}>
                 <img
                   src={song?.images.background}
                   alt="name"
